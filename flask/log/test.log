@@ -1,0 +1,87 @@
+[2023-06-20 11:02:33,229][utils.py][line:148][INFO] Note: NumExpr detected 12 cores but "NUMEXPR_MAX_THREADS" not set, so enforcing safe limit of 8.
+[2023-06-20 11:02:33,230][utils.py][line:160][INFO] NumExpr defaulting to 8 threads.
+[2023-06-20 11:02:34,299][_internal.py][line:187][INFO] [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:3000
+ * Running on http://192.168.0.122:3000
+[2023-06-20 11:02:34,300][_internal.py][line:187][INFO] [33mPress CTRL+C to quit[0m
+[2023-06-20 11:02:45,490][_internal.py][line:187][INFO] 127.0.0.1 - - [20/Jun/2023 11:02:45] "OPTIONS /sort HTTP/1.1" 200 -
+[2023-06-20 11:02:45,494][_internal.py][line:187][INFO] 127.0.0.1 - - [20/Jun/2023 11:02:45] "OPTIONS /sort HTTP/1.1" 200 -
+[2023-06-20 11:02:45,500][app_test.py][line:38][INFO] request_20230620_110245500823:
+content:
+[2023-06-20 11:02:45,503][SentenceTransformer.py][line:66][INFO] Load pretrained SentenceTransformer: sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2
+[2023-06-20 11:02:45,506][app_test.py][line:38][INFO] request_20230620_110245505820:
+content:
+[2023-06-20 11:02:45,507][SentenceTransformer.py][line:66][INFO] Load pretrained SentenceTransformer: sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2
+[2023-06-20 11:02:48,570][app_test.py][line:38][INFO] request_20230620_110248570105:
+content:∑≠“Î
+[2023-06-20 11:02:48,571][SentenceTransformer.py][line:105][INFO] Use pytorch device: cpu
+[2023-06-20 11:02:48,571][SentenceTransformer.py][line:66][INFO] Load pretrained SentenceTransformer: sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2
+[2023-06-20 11:02:48,572][model.py][line:20][INFO] 
+µ˜”√ƒ£–Õ!!!!! ‰»Î£∫
+[2023-06-20 11:02:48,677][app_test.py][line:44][INFO] request_20230620_110245500823:
+¥ÌŒÛ–≈œ¢: Traceback (most recent call last):
+  File "d:\CScience\Git\myapi\service\app_test.py", line 39, in search_embedding
+    result = model_fun(search_Value, appData)
+  File "d:\CScience\Git\myapi\service/..\model\model.py", line 26, in model_fun
+    data["embedding"] = data["embedding"].apply(str_to_array)
+  File "C:\Users\”ÍÃ˝«Ÿ\AppData\Roaming\Python\Python39\site-packages\pandas\core\series.py", line 4630, in apply
+    return SeriesApply(self, func, convert_dtype, args, kwargs).apply()
+  File "C:\Users\”ÍÃ˝«Ÿ\AppData\Roaming\Python\Python39\site-packages\pandas\core\apply.py", line 1025, in apply
+    return self.apply_standard()
+  File "C:\Users\”ÍÃ˝«Ÿ\AppData\Roaming\Python\Python39\site-packages\pandas\core\apply.py", line 1076, in apply_standard
+    mapped = lib.map_infer(
+  File "pandas\_libs\lib.pyx", line 2834, in pandas._libs.lib.map_infer
+  File "d:\CScience\Git\myapi\service/..\model\model.py", line 12, in str_to_array
+    array = np.array([float(x) for x in elements])
+  File "d:\CScience\Git\myapi\service/..\model\model.py", line 12, in <listcomp>
+    array = np.array([float(x) for x in elements])
+ValueError: could not convert string to float: '0.026839682832360268,'
+
+[2023-06-20 11:02:48,940][_internal.py][line:187][INFO] 127.0.0.1 - - [20/Jun/2023 11:02:48] "POST /sort HTTP/1.1" 200 -
+[2023-06-20 11:02:49,907][SentenceTransformer.py][line:105][INFO] Use pytorch device: cpu
+[2023-06-20 11:02:49,907][model.py][line:20][INFO] 
+µ˜”√ƒ£–Õ!!!!! ‰»Î£∫
+[2023-06-20 11:02:49,968][app_test.py][line:44][INFO] request_20230620_110245505820:
+¥ÌŒÛ–≈œ¢: Traceback (most recent call last):
+  File "d:\CScience\Git\myapi\service\app_test.py", line 39, in search_embedding
+    result = model_fun(search_Value, appData)
+  File "d:\CScience\Git\myapi\service/..\model\model.py", line 26, in model_fun
+    data["embedding"] = data["embedding"].apply(str_to_array)
+  File "C:\Users\”ÍÃ˝«Ÿ\AppData\Roaming\Python\Python39\site-packages\pandas\core\series.py", line 4630, in apply
+    return SeriesApply(self, func, convert_dtype, args, kwargs).apply()
+  File "C:\Users\”ÍÃ˝«Ÿ\AppData\Roaming\Python\Python39\site-packages\pandas\core\apply.py", line 1025, in apply
+    return self.apply_standard()
+  File "C:\Users\”ÍÃ˝«Ÿ\AppData\Roaming\Python\Python39\site-packages\pandas\core\apply.py", line 1076, in apply_standard
+    mapped = lib.map_infer(
+  File "pandas\_libs\lib.pyx", line 2834, in pandas._libs.lib.map_infer
+  File "d:\CScience\Git\myapi\service/..\model\model.py", line 12, in str_to_array
+    array = np.array([float(x) for x in elements])
+  File "d:\CScience\Git\myapi\service/..\model\model.py", line 12, in <listcomp>
+    array = np.array([float(x) for x in elements])
+ValueError: could not convert string to float: '0.026839682832360268,'
+
+[2023-06-20 11:02:50,226][_internal.py][line:187][INFO] 127.0.0.1 - - [20/Jun/2023 11:02:50] "POST /sort HTTP/1.1" 200 -
+[2023-06-20 11:02:51,091][SentenceTransformer.py][line:105][INFO] Use pytorch device: cpu
+[2023-06-20 11:02:51,092][model.py][line:20][INFO] 
+µ˜”√ƒ£–Õ!!!!! ‰»Î£∫∑≠“Î
+[2023-06-20 11:02:51,189][app_test.py][line:44][INFO] request_20230620_110248570105:
+¥ÌŒÛ–≈œ¢: Traceback (most recent call last):
+  File "d:\CScience\Git\myapi\service\app_test.py", line 39, in search_embedding
+    result = model_fun(search_Value, appData)
+  File "d:\CScience\Git\myapi\service/..\model\model.py", line 26, in model_fun
+    data["embedding"] = data["embedding"].apply(str_to_array)
+  File "C:\Users\”ÍÃ˝«Ÿ\AppData\Roaming\Python\Python39\site-packages\pandas\core\series.py", line 4630, in apply
+    return SeriesApply(self, func, convert_dtype, args, kwargs).apply()
+  File "C:\Users\”ÍÃ˝«Ÿ\AppData\Roaming\Python\Python39\site-packages\pandas\core\apply.py", line 1025, in apply
+    return self.apply_standard()
+  File "C:\Users\”ÍÃ˝«Ÿ\AppData\Roaming\Python\Python39\site-packages\pandas\core\apply.py", line 1076, in apply_standard
+    mapped = lib.map_infer(
+  File "pandas\_libs\lib.pyx", line 2834, in pandas._libs.lib.map_infer
+  File "d:\CScience\Git\myapi\service/..\model\model.py", line 12, in str_to_array
+    array = np.array([float(x) for x in elements])
+  File "d:\CScience\Git\myapi\service/..\model\model.py", line 12, in <listcomp>
+    array = np.array([float(x) for x in elements])
+ValueError: could not convert string to float: '0.026839682832360268,'
+
+[2023-06-20 11:02:51,458][_internal.py][line:187][INFO] 127.0.0.1 - - [20/Jun/2023 11:02:51] "POST /sort HTTP/1.1" 200 -

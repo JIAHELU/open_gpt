@@ -1,0 +1,6 @@
+export const SITE_TITLE = 'OpenGPT - Create ChatGpt Application in seconds'
+
+export const MAX_TOKENS = 500
+export const RATE_LIMIT_COUNT = 5
+
+export const PURCHASE_URL = process.env.NEXT_PUBLIC_PURCHASE_URL

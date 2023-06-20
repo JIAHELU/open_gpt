@@ -1,0 +1,11 @@
+if   [ ${1} = 'pull' ];then # [ [ 两边要有空格
+    git pull origin develop:dev
+elif [ ${1} = 'push' ];then
+    git push origin dev:develop
+elif [ ${1} = 'add' ];then
+    git add .
+elif [ ${1} = 'c' ];then
+    git commit -m ${2}
+elif [ ${1} = 'gu' ];then
+    echo '123'
+fi
